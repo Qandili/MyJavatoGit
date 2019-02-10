@@ -20,6 +20,7 @@ public class Main {
         for (int i=0;i<email.length();i++){
             if (email.charAt(i)=='.'){
                 counter++;
+                System.out.println("test");
             }
         }
         return counter;
