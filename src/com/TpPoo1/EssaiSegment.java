@@ -12,7 +12,6 @@ public class EssaiSegment {
         System.out.println("point 8");
         int point=8;
         System.out.println("checking if the point is in segment"+segment1.PointIsinSegment(8));
-        System.out.println("hahahahahhahaha");
 
     }
 }
