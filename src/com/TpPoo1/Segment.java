@@ -18,7 +18,7 @@ public class Segment {
         }
 
     }
-    public boolean PointIsinSegment(int point){
+    public boolean pointIsinSegment(int point){
         return point>this.extrem1 && point<this.extrem2;
     }
 
