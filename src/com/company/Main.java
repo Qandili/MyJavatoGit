@@ -1,4 +1,5 @@
 package com.company;
+import com.TpPoo1.Segment;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -139,6 +140,7 @@ public class Main {
         return isKaperkar;
     }
     public static void main(String[] args) {
+        Segment segment;
         Scanner in=new Scanner(System.in);
         String myEmail=in.nextLine();
         System.out.println(validateEmail(myEmail));
