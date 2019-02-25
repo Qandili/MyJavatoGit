@@ -6,6 +6,11 @@ public class Complexe {
 
     private double imaginaryPart;
 
+    public Complexe(Complexe complexe) {
+        this.realPart = complexe.realPart;
+        this.imaginaryPart = complexe.imaginaryPart;
+    }
+
     public Complexe(double realPart, double imaginaryPart) {
         this.realPart = realPart;
         this.imaginaryPart = imaginaryPart;
