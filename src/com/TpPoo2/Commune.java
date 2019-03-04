@@ -9,7 +9,11 @@ public class Commune {
         this.habitations = new Habitation[taille];
     }
     public void add(Habitation habitation){
-        habitations[indice++]=habitation;
+        if (indice<habitations.length){
+            habitations[indice++]=habitation;
+        }else {
+            System.err.println("la taille de tableau est insufisante");
+        }
     }
     public void show(){
         for (int i=0;i<habitations.length;i++){
