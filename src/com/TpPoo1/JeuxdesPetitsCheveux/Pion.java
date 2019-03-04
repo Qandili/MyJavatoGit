@@ -25,7 +25,7 @@ public class Pion {
         this.couleur = couleur;
     }
 
-    public boolean isVitesse() {
+    public boolean getVitesse() {
         return vitesse;
     }
 
@@ -42,10 +42,10 @@ public class Pion {
     }
     public boolean estArrive(){
         if (this.couleur.equals("jaune")){
-            return this.position>29;
+            return this.position>=29;
         }
          else if (this.couleur.equals("rouge")){
-            return this.position>39;
+            return this.position>=39;
         }
         return false;
     }
@@ -69,9 +69,32 @@ public class Pion {
         }
     }
     static void avancer(int n, Pion p){
+        int c=0;
         if (p.couleur.equals("jaune")){
+            if (n+p.position>29){
+                c=n-(n+p.position-29);
+                p.position+=c;
+            }else {
+                p.position+=n;
+            }
         }
-        if (p.couleur.equals("rouge")){
+        else if (p.couleur.equals("rouge")){
+            if (n+p.position>39){
+                c=n-(n+p.position-39);
+                p.position+=c;
+            }else {
+                p.position+=n;
+            }
+        }
+    }
+    void avancerAvecConflit(int n, Pion pio){
+        avancer(n);
+        if (this.position==pio.position){
+            if (this.couleur.equals("jaune")){
+                pio.position=10;
+            }else {
+                pio.position=0;
+            }
         }
     }
 }
