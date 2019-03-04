@@ -18,7 +18,7 @@ public abstract class Commercial extends Employee {
 
     @Override
     public void affiche() {
-        System.out.println("Comercial No "+objNo);
+        System.out.println("Commercial No "+objNo);
         super.affiche();
         System.out.println("chiffre d'affaire "+this.chiffreAffaire);
     }
