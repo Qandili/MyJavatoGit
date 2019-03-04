@@ -4,9 +4,6 @@ public class HabIndividuelle extends Habitation{
     private int NbPieces;
     private boolean piscine;
 
-    public HabIndividuelle(String proprietaire, String addresse, double surface) {
-        super(proprietaire, addresse, surface);
-    }
 
     public HabIndividuelle(String proprietaire, String addresse, double surface, int nbPieces, boolean piscine) {
         super(proprietaire, addresse, surface);
