@@ -2,7 +2,7 @@ package com.TpPoo2.Entreprise;
 
 public abstract class Commercial extends Employee {
     double chiffreAffaire;
-    static int ComNo;
+    static int ComNo=0;
     int objNo;
 
     public Commercial(String nom, String preNom, int age, int recrAnne,double chiffreAffaire) {

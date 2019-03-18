@@ -2,7 +2,7 @@ package com.TpPoo2;
 
 public class Habitation {
     private String proprietaire;
-    private String addresse;
+    String addresse;
     private double surface;
 
     public Habitation(String proprietaire, String addresse, double surface) {

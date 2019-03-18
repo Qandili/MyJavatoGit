@@ -1,6 +1,5 @@
 package com.TpPoo2.Entreprise;
 
-import com.TpPoo2.Habitation;
 
 public class Personnel {
     Employee[] employees;
@@ -35,7 +34,7 @@ public class Personnel {
         for (int i=0;i<employees.length;i++){
             if (employees[i] instanceof Producteur){
                 System.out.println("Producteur No "+Producteur.ProdNo);
-            }else {
+            }else if (employees[i] instanceof Commercial){
                 System.out.println("Commercial No "+Commercial.ComNo);
             }
         }

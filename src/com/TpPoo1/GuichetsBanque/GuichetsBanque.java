@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class GuichetsBanque {
     Boolean[] tabGuichets;
 
-    public GuichetsBanque(int n) {
+    GuichetsBanque(int n) {
         tabGuichets=new Boolean[n];
         for (int i=0;i<n;i++){
             tabGuichets[i]=(true);

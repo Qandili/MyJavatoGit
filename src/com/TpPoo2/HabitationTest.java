@@ -8,7 +8,5 @@ public class HabitationTest {
         commune.add(hPro);
         commune.add(hInd);
         commune.show();
-        commune.add(hInd);
-
     }
 }

@@ -2,7 +2,7 @@ package com.TpPoo2;
 
 public class Commune {
     Habitation[] habitations;
-    int indice=0;
+    int indice;
 
 
     public Commune(int taille) {
