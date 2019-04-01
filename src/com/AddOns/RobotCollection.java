@@ -6,7 +6,9 @@ public class RobotCollection {
     ArrayList<Robot> robots;
 
     public RobotCollection() {
+
         this.robots = new ArrayList<Robot>();
+
     }
 
     public void Add(Robot robot){
